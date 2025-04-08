@@ -1,13 +1,17 @@
-# Sample Hardhat Project
+# Hardhat Practica 1 - Contador
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+Este proyecto es mi primera práctica con Hardhat. Implementa un contrato `Contador` que incrementa un valor y lo lee.
 
-Try running some of the following tasks:
+## Archivos
+- `contracts/Contador.sol`: Contrato Solidity.
+- `scripts/deploy.js`: Script para desplegar.
+- `test/ContadorTest.js`: Tests con Mocha/Chai.
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.js
-```
+## Comandos
+- Compilar: `npx hardhat compile`
+- Desplegar: `npx hardhat run scripts/deploy.js`
+- Testear: `npx hardhat test`
+
+## Resultados
+- Desplegado en: `0x5FbDB2315678afecb367f032d93F642f64180aa3`
+- Tests: 10 pruebas pasadas (1 de Contador, 9 de Lock).
